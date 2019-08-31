@@ -1,0 +1,22 @@
+{
+  "name": "gamepad-browser-gamepad",
+  "version": "0.0.1",
+  "description": "browser app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "export ENV=dev && node_modules/.bin/webpack-dev-server --config config/index.js --progress --colors --watch --display-modules ",
+    "build": "export ENV=dev && node_modules/.bin/webpack --config config/index.js",
+    "build:dev": "export ENV=dev && node_modules/.bin/webpack --config config/index.js",
+    "build:prod": "export ENV=prod && node_modules/.bin/webpack --config config/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "mqtt": "^3.0.0",
+    "ramda": "^0.26.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
